@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+header{
+    background-color: black;
+    height: 7vh;
+    width: 100%;
+    color: white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.logo{
+    width: 100px;
+    height: 100px       ;
+    color: white;
+}
