@@ -4,19 +4,25 @@
     padding: 0%;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
 header{
     background-color: black;
-    height: 7vh;
+    height: 10vh;
     width: 100%;
     color: white;
 }
 
 nav{
     display: grid;
+    height: 10vh;
     grid-template-columns: 10% 90%;
-    margin: 0px 30px;
 }
-
 /*nav logo*/
 
 .TituLogo{
@@ -25,17 +31,25 @@ nav{
 }
 
 .TituLogo, .icons{
-    margin-top: 10px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;   
 }
 
 .tittle a{
     color: white;
+    font-size: 30px;
     text-decoration: none;
 }
 
-.spanKa{
-    left: 100px;
-}
+.spanKaf, .spanKa {
+    white-space: nowrap;
+  }
+
+  .logo img{
+    height: 50px;
+    width: 50px;
+  }
 
 /*Search-Bar*/
 .box-busca{ 
@@ -53,8 +67,8 @@ nav{
 .search-box form {
     display: flex;
     border-radius: 20px;
-    background-color: #4c4c4c;
-    height: 35px;
+    background-color: #a0a0a0;
+    height: 40px;
 }
 
 .search-box:hover .s.TituLogo, .icons{
@@ -63,28 +77,36 @@ nav{
 
 .search-box-input {
     padding-left: 2em;
-    padding-right: 1em;
-    width: 100px;
+    padding-right:3em;
+    width: 200px;
+    overflow: hidden;
 }
 
 .search-box-input {
     outline: 0;
     font-size: 1.2em;
-    color: #D9D9D9;
+    color: #727272;
     width: 0;
     padding: 0;
+    margin-left: 5px;
     border: none;
     background: none;
     transition: 1s;
 }
 
+.search-box-input::placeholder {
+    color: #ffffff;
+    opacity: 0.6;
+    text-align: center;
+  }
+
 .search-box-button {
    display: flex;
    position: relative;
    border-radius: 50%;
-   width: 35px;
-   height: 35px;
-   background-color: #D9D9D9;
+   width: 40px;
+   height: 40px;
+   background-color: #9c9c9c;
    border: none;
    cursor: pointer;
    transition: .3s;
@@ -92,6 +114,7 @@ nav{
 
 .search-box-button img{
     position: absolute;
+    margin-top: 5px;
     left: -14px;
 }
 
@@ -111,28 +134,87 @@ nav{
     display: flex;
     justify-content: end ;
     align-items: center;
+    margin-right: 20px;
 }
 
 .shopping-cart img{
-    height: 35px;
-    width: 45px;
+    height: 45px;
+    width: auto;
 }
 
 .profile img{
-    height: 35px;
-    width: 40px;
+    height: 45px;
+    width: auto;
 }
 
-.shopping-cart, .profile{
-    margin-left: 10px;
+/*Main*/
+.Main-part1{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    height: 45vh;
+    width: 100vw;
+    margin-top: 55px;
 }
 
+.carrosel, .caixa1{
+    margin-top: 10px;
+}
 
+.carrosel{
+    width:50vw;
+    height: 35vh;
+    border: 2px solid red;
+}
 
+.caixa1 , .caixa2{
+    width: 38vw;
+    height: 16vh;
+    border: 2px solid red;
+}
 
+.caixa1{
+    margin-bottom: 28px;
+}
 
+.Main-part2{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    height: 45vh;
+    width: 100vw;
+}
 
+.cardslide{
+    width: 47vw;
+    height: 45vh;
+    border: 2px solid red;
+}
 
+.shoes-special-a{
+    width: 20vw;
+    height: 21vh;
+    border: 2px solid red;
+}
 
+.special-shoes{
+    display: flex;
+    gap: 20px;
+}
 
+.divisao1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vw;
+}
 
+/*footer*/
+footer {
+    margin-top: 20px;
+    background-color: #212529;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
