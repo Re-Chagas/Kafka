@@ -1,7 +1,23 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0%;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body{
@@ -19,9 +35,10 @@ header{
 }
 
 nav{
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
     height: 10vh;
-    grid-template-columns: 10% 90%;
 }
 /*nav logo*/
 
@@ -147,120 +164,44 @@ nav{
     width: auto;
 }
 
-/*Main*/
-.Main-part1{    
+/*Mains*/
+.Main-part1{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 2vw;
-    height: 45vh;
     width: 100vw;
-    margin-top: 55px;
+    height: 70vh;
 }
 
-.carrosel, .caixa1{
-    margin-top: 10px;
-}
-
-.carrosel{
-    width:50vw;
-    height: 35vh;
-}
-
-.caixa1 , .caixa2{
-    width: 38vw;
-    height: 16vh;
-}
-
-.caixa1{
-    margin-bottom: 28px;
-}
-
-.Main-partMeio{
+.all-main-part1{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width:100vw;
-    height: 40vh;
-}
-
-.Anuncio-Grande{
-    width:90vw;
-    height: 40vh;
-}
-
-.Main-part2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Noticias*/
-.caixa1 img, .caixa2 img{
-    width: 100%;
-    height: 100%;
-}
-
-/*Anuncio-Central*/
-.Anuncio-Grande{
-    background-image: url(../../Images/carrousel-images/irado-papel-de-parede-masculino.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/*carrousel*/
-.d-block{
-    width: 50vw;
-    height: 35vh;
-}
-
-/*Main-part3*/
-.Main-part3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 30vh;
-    margin-top: 30px;
-}
-
-.tenis-s4{    
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     width: 100vw;
-    height: 30vh;
-    margin: 0 70px;    
-    gap: 2vw;
+    height: 70vh;
 }
 
-.cards{
-    border: 1px solid red;
-    width: 16.4vw;
-    height: 30vh;
-    border-radius: 20px 20px 0px 0px;
+.carousel img.d-block{
+    width: 100vw !important;
+    height: 70vw !important;
 }
 
-.img-cards{
-    width: 16.4vw;
-    height: 20vh;
-    border: 1px solid red;
-    border-radius: 20px 20px 0px 0px;
+.carousel h5, p{
+    color: white;
 }
 
-.tittle-cards{
-    width: 16.4vw;
-    height: 10vh;
-    border: 1px solid red;
+.carousel{
+    position: relative;
+    width: 100vw !important ;
+    height: 70vw;
+    line-height: 70vw;
+    vertical-align: center !important;
 }
 
-/*footer*/
 footer {
-    margin-top: 20px;
     background-color: #212529;
     color: #fff;
     padding: 30px 0;
     text-align: center;
+    
   }
 
