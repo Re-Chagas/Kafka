@@ -174,13 +174,26 @@ nav{
 #carouselExampleCaptions{
     position: relative !important;
     width: 100vw !important ;
-    height: 41vh;
+    height: 41vw;
     vertical-align: center !important;
 }
-.carousel img.d-block{
+.d-block{
     width: 100vw !important;
-    height: 41vh !important;
+    height: 41vw !important;
 }
+
+@media screen and (max-width: 600px) {
+    #carouselExampleCaptions{
+        position: relative !important;
+        width: 100vw !important ;
+        height: 70vw;
+        vertical-align: center !important;
+    }
+    .d-block{
+        width: 100vw !important;
+        height: 70vw !important;
+    }
+  }
 
 .carousel h5, p{
     color: white;
@@ -209,36 +222,87 @@ nav{
     justify-content: center !important;
     align-items: flex-start;
 }
+
+.botao a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .botao {
     background-color: transparent !important;border: 0;
     background-color: transparent;
 }
-.card-group>.card {
-    height: 21.5vw !important;
-    width: 10vw !important;
-}
-.card > img {
-    height: 20vw !important;
+
+.card img{
+    width: 100%;
+    height: 50%;
 }
 
-.card > img {
-    height: 500px !important;
-}
+/*lançamentos*/
 
-@media only screen and (max-width: 750px) {
-    .card-group{
-        display: flex !important;
-        align-items: center;
-        flex-direction: column !important;
-        width: 100% !important;
+.card-slides {    
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-slide {
+    padding: 10px;
+    width: 20vw;
+  }
+  
+  .card-slide img {
+    border-radius: 20px;
+    width: 20vw;
+    height: 30vh;
+  }
+  
+  .card-slide  {
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .card-slides {    
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column ;
+      }
+
+    .card-slide{
+        width: 100vw;
+        margin-top: 20px;
     }
 
-    .card-group>.card {
-        height: 10vw !important;
-        width: 100vw !important;
-    }
-
-    .card img{
-        width: 100vw !important;
-    }
+    .card-slide img {
+        border-radius: 10px;
+        width: 80vw;
+        height: 50vh;
+      }
 }
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .site-footer p {
+    margin: 0;
+  }
+  
+  .social-links a {
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: 30px;
+  }
