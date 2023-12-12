@@ -167,55 +167,78 @@ nav{
 /*Mains*/
 .Main-part1{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     width: 100vw;
-    height: 70vh;
 }
 
-.all-main-part1{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 70vh;
+#carouselExampleCaptions{
+    position: relative !important;
+    width: 100vw !important ;
+    height: 41vh;
+    vertical-align: center !important;
 }
-
 .carousel img.d-block{
     width: 100vw !important;
-    height: 70vw !important;
+    height: 41vh !important;
 }
 
 .carousel h5, p{
     color: white;
 }
 
-.carousel{
-    position: relative;
-    width: 100vw !important ;
-    height: 70vw;
-    line-height: 70vw;
-    vertical-align: center !important;
-}
 
-.banner-estilo-tenis{
-    width: 100vw !important;
-    height: 30vh !important;
-    margin-top: 10px;
-    background-color: red;
-}
-
-.Main-part2{
+.titulo-categoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 7vh;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(49, 49, 49);
 }
 
-footer {
-    background-color: #212529;
-    color: #fff;
-    padding: 30px 0;
-    text-align: center;
-    
-  }
+.card{
+    display: flex !important;
+    align-items: center;
+    background-color: black;
+}
 
+.button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start;
+}
+.botao {
+    background-color: transparent !important;border: 0;
+    background-color: transparent;
+}
+.card-group>.card {
+    height: 21.5vw !important;
+    width: 10vw !important;
+}
+.card > img {
+    height: 20vw !important;
+}
 
+.card > img {
+    height: 500px !important;
+}
+
+@media only screen and (max-width: 750px) {
+    .card-group{
+        display: flex !important;
+        align-items: center;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .card-group>.card {
+        height: 10vw !important;
+        width: 100vw !important;
+    }
+
+    .card img{
+        width: 100vw !important;
+    }
+}
