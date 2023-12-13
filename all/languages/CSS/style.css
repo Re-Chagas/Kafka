@@ -282,7 +282,11 @@ nav{
     .card-slide img {
         border-radius: 10px;
         width: 80vw;
-        height: 50vh;
+        height: 30vh;
+      }
+
+      .titulo-categoria h1{
+        font-size: 20px ;
       }
 }
 
@@ -306,3 +310,8 @@ nav{
     width: 30px;
     height: 30px;
   }
+
+.icons img:hover{
+    box-shadow:  1px 1px 3px 2px rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}

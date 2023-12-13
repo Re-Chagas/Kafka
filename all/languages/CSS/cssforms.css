@@ -1,0 +1,79 @@
+body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .Cadastro-ok a{ 
+   position: absolute;
+    color: #000;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .Cadastro-ok{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 3vh;
+  }
+
+  .Cadastro-ok input{
+    width: 20px;
+    height: 15px;
+  }
+  
+  input {
+    width: 30vw;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  label {
+    font-size: 16px;
+  }
+  
+  .checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .checkbox input {
+    margin-right: 16px;
+  }
+  
+  .final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .final a{
+    position: absolute;
+  }
+
+  .final a:nth-child(2){
+    margin-top: 70px;
+  }
